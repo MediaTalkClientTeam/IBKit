@@ -4,7 +4,7 @@
 //
 //  Created by NateKim on 2019/11/11.
 //
-#if canImport(SwiftUI)
+#if canImport(SwiftUI) && DEBUG
 import SwiftUI
 
 /// A preview that represents a UIKit view / viewController.
