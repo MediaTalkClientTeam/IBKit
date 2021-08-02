@@ -10,12 +10,24 @@ let package = Package(
     ],
     products: [
         .library(
+            name: "SwiftUIPreview",
+            targets: ["SwiftUIPreview"]),
+        .library(
             name: "IBKit",
             targets: ["IBKit"]),
+        .library(
+            name: "IBKit-Preview",
+            targets: ["IBKit-Preview"]),
+        
     ],
     targets: [
         .target(
+            name: "SwiftUIPreview"),
+        .target(
             name: "IBKit"),
+        .target(
+            name: "IBKit-Preview",
+            dependencies: ["SwiftUIPreview"]),
         .testTarget(
             name: "IBKitTests",
             dependencies: ["IBKit"]),
